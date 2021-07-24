@@ -1,0 +1,455 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: MontserratBold;
+  src: url("../assets/fonts/Montserrat-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: MontserratSemiBold;
+  src: url("../assets/fonts/Montserrat-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: MontserratMedium;
+  src: url("../assets/fonts/Montserrat-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: MontserratLight;
+  src: url("../assets/fonts/Montserrat-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url("../assets/fonts/Montserrat-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: playfair;
+  src: url("../assets/fonts/PlayfairDisplay-VariableFont_wght.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: playfairitalic;
+  src: url("../assets/fonts/PlayfairDisplay-Italic-VariableFont_wght.ttf")
+    format("truetype");
+}
+
+/* -------------------------------Header Styles ------------------------------- */
+
+.header {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+.brand--container {
+  width: 100%;
+  height: 20%;
+  position: absolute;
+  z-index: 1;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.brand--container__square {
+  width: 63.8%;
+  height: 52%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  background-color: rgba(248, 248, 248, 0.802);
+}
+
+.brand--container__square p {
+  padding-left: 9%;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-family: MontserratSemiBold;
+  letter-spacing: 3px;
+}
+
+.brand--container__logo {
+  position: absolute;
+}
+
+.slider--container {
+  max-width: 100%;
+  max-height: 100%;
+  width: 100%;
+  height: 78.5vh;
+  position: absolute;
+  overflow: hidden;
+  margin: auto;
+}
+
+.slider--slide img {
+  width: 100%;
+  max-height: 100vh;
+  height: inherit;
+  object-fit: cover;
+  vertical-align: top;
+  transition: 2s;
+}
+
+.arrows--container {
+  width: 100%;
+  height: 100%;
+  padding: 0 5.5% 0 5.5%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.fade {
+  animation: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.square--container {
+  width: 63.8%;
+  height: auto;
+  background-color: black;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 2;
+  bottom: 0px;
+}
+
+.square--line {
+  width: 53%;
+  height: 6px;
+  background-color: white;
+  position: absolute;
+  top: 0;
+}
+.squareBlack--text {
+  font-family: playfair;
+  color: white;
+}
+
+.squareBlack--text__title {
+  text-transform: uppercase;
+  font-size: 40px;
+  letter-spacing: 3px;
+  margin-top: 44px;
+}
+.squareBlack--text__subtitle {
+  font-size: 30px;
+  margin-bottom: 44px;
+}
+
+.squareBlack--text__paragraph {
+  font-size: 14px;
+  padding: 0 13% 10% 13%;
+  font-family: Montserrat;
+}
+
+/* -------------------------------Main Styles ------------------------------- */
+.main {
+  width: 100%;
+  background-color: white;
+}
+.main--article {
+  width: 100%;
+  height: 456px;
+  background-color: RGB(241, 242, 242);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 16.6% 0 16.6%;
+}
+
+.article--container {
+  padding-right: 5%;
+}
+
+.article--tex {
+  font-family: MontserratBold;
+  text-transform: uppercase;
+  margin-bottom: 5%;
+}
+
+.article--tex__subtitle {
+  text-align: center;
+  font-size: 17px;
+}
+
+.article--tex__title {
+  font-size: 40px;
+}
+
+.article--tex__paragraph {
+  font-family: Montserrat;
+  font-weight: 14px;
+  margin-bottom: 12%;
+}
+
+.article--button {
+  width: 180px;
+  height: 32px;
+  font-size: 17px;
+  font-family: MontserratMedium;
+  background-color: transparent;
+  color: RGB(226, 31, 37);
+  border: 2px solid RGB(226, 31, 37);
+  border-radius: 5px;
+  padding: 5px 0 5px 0;
+  cursor: pointer;
+}
+
+.article--button:hover {
+  background-color: rgba(233, 57, 63, 0.124);
+}
+.main--pictures {
+  width: 100%;
+  height: 356px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 60px 0 60px;
+}
+
+.pictures--title {
+  font-family: MontserratMedium;
+  font-size: 17px;
+  text-transform: uppercase;
+  margin-bottom: 2.2%;
+}
+
+.pictures--container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.date--container {
+  width: 97px;
+  height: 56px;
+  position: absolute;
+  z-index: 2;
+  background-color: RGB(40, 41, 48);
+}
+.date--container p {
+  color: white;
+  font-family: MontserratBold;
+}
+.date--picture__day {
+  font-size: 50px;
+  padding-left: 30px;
+  position: absolute;
+  bottom: 0px;
+}
+
+.date--picture__days {
+  font-size: 50px;
+  padding-left: 11px;
+  position: absolute;
+  bottom: 0px;
+}
+
+.date--picture__month {
+  font-size: 14px;
+  display: block;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  position: absolute;
+  bottom: 33%;
+  right: 6%;
+}
+
+.pictures--picture {
+  padding-right: 1.9%;
+}
+
+/* -------------------------------Footer Styles ------------------------------- */
+.footer {
+  width: 100%;
+  height: 45px;
+  background-color: RGB(241, 242, 242);
+  font-family: Montserrat;
+  font-weight: 11px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* -------------------------------BookNow Styles ------------------------------- */
+
+.book--container {
+  width: 329px;
+  height: 689px;
+  background-color: RGB(30, 30, 30);
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0px 40px 0 40px;
+  position: relative;
+  top: 200px;
+  right: -677px;
+  transition: transform 0.3s ease-in-out;
+  transform: translate(110%);
+  z-index: 2;
+}
+
+.book--title {
+  margin-bottom: 65px;
+  font-family: playfair;
+  font-size: 40px;
+}
+
+.form--label {
+  font-family: MontserratBold;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.form--group {
+  position: relative;
+  padding-bottom: 10px;
+  margin-bottom: 35px;
+}
+
+.form {
+  border: none;
+  border-radius: 2px;
+  outline: none;
+}
+
+.form:focus {
+  border: 2px solid RGB(139, 146, 151);
+  border-radius: 2px;
+}
+
+.form--input {
+  width: 223px;
+  height: 35px;
+  padding: 0 15px 0 10px;
+}
+
+.form--input__two {
+  width: 99px;
+  height: 37px;
+  padding: 0 15px 0 10px;
+  margin: -5px 10px 0 10px;
+}
+
+.form--img {
+  position: absolute;
+  top: 39px;
+  right: 25px;
+  z-index: 10;
+}
+
+.form--img_1 {
+  position: absolute;
+  top: 39px;
+  left: 88px;
+  z-index: 10;
+}
+
+.form--input__error {
+  font-family: MontserratLight;
+  font-size: 10px;
+  padding-top: 5px;
+  color: RGB(139, 146, 151);
+  display: none;
+}
+
+.form--text__playfair {
+  padding-bottom: 35px;
+  color: RGB(139, 146, 151);
+  font-family: playfair;
+  font-family: 15px;
+}
+
+.form--text__montserrat {
+  padding-top: 35px;
+  color: RGB(139, 146, 151);
+  font-family: MontserratBold;
+  font-family: 15px;
+  display: block;
+}
+
+.book--logo__rotate {
+  position: relative;
+  top: 400px;
+  right: 20px;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  cursor: pointer;
+  z-index: 3;
+}
+
+.booknow--logo {
+  position: absolute;
+  bottom: -533px;
+  left: 155px;
+  font-family: MontserratBold;
+  font-size: 17px;
+  color: white;
+  width: 149px;
+  height: 41px;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+  transition: transform 0.3s ease-in-out;
+  transform: translateY(797%);
+  text-transform: uppercase;
+}
+
+.book--close {
+  position: absolute;
+  padding: 15px 0px 0px 20px;
+  top: 0;
+  left: 0;
+}
+
+.close {
+  cursor: pointer;
+}
+
+.spread {
+  transform: translate(0);
+}
