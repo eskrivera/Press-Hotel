@@ -9,13 +9,3 @@ booknow.addEventListener("click", () => {
 closer.addEventListener("click", () => {
   booknowCont.classList.toggle("spread"), booknow.classList.toggle("spread");
 });
-
-// ------------------DatePicker----------------------------
-
-var pickerArr = new Pikaday({
-  field: document.getElementById("datepickerarr"),
-});
-
-var pickerDep = new Pikaday({
-  field: document.getElementById("datepickerdep"),
-});
