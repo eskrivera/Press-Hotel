@@ -1,8 +1,5 @@
-/* ----------------Header------------------------ */
-
-/* ----------------Header------------------------ */
-
 @media only screen and (max-width: 1600px) {
+  /* ----------------Main------------------------ */
   .main--article {
     height: 100%;
     padding: 3% 6% 3% 6%;
@@ -10,6 +7,7 @@
 }
 
 @media only screen and (max-width: 1400px) {
+  /* ----------------BookNow------------------------ */
   .book--container {
     height: 100%;
     padding-bottom: 4%;
@@ -33,6 +31,7 @@
 }
 
 @media only screen and (max-width: 1250px) {
+  /* ----------------Main------------------------ */
   .article--tex__title {
     font-size: 35px;
   }
@@ -117,6 +116,7 @@
 }
 
 @media only screen and (max-width: 740px) {
+  /* ----------------Header------------------------ */
   .header {
     height: fit-content;
   }
@@ -152,6 +152,7 @@
 }
 
 @media only screen and (max-width: 480px) {
+  /* ----------------Header------------------------ */
   .header {
     height: 700px;
   }
@@ -185,6 +186,7 @@
 }
 
 @media only screen and (max-width: 390px) {
+  /* ----------------Header------------------------ */
   .header {
     height: 760px;
   }
