@@ -2,6 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* overflow: hidden; */
+}
+
+a {
+  text-decoration: none;
 }
 
 @font-face {
@@ -152,6 +157,7 @@
 }
 .squareBlack--text {
   font-family: playfair;
+  font-weight: lighter;
   color: white;
 }
 
@@ -318,18 +324,56 @@
   justify-content: center;
   flex-direction: column;
   padding: 0px 40px 0 40px;
-  position: relative;
-  top: 200px;
-  right: -677px;
+  position: fixed;
+  top: 10%;
+  right: 0;
   transition: transform 0.3s ease-in-out;
-  transform: translate(110%);
-  z-index: 2;
+  transform: translate(100%);
+  z-index: 5;
+}
+
+.book--logo__rotate {
+  position: fixed;
+  transform: rotate(-90deg);
+  top: 344px;
+  right: 274px;
+  z-index: 10;
+}
+
+.booknow--logo {
+  width: 149px;
+  height: 41px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  font-family: MontserratBold;
+  font-size: 17px;
+  text-transform: uppercase;
+  cursor: pointer;
+  z-index: 3;
+  transition: transform 0.3s ease-in-out;
+  transform: translateY(797%);
+}
+
+.book--close {
+  position: absolute;
+  padding: 15px 0px 0px 20px;
+  top: 0;
+  left: 0;
+}
+
+.close {
+  cursor: pointer;
 }
 
 .book--title {
-  margin-bottom: 65px;
+  margin: 20px 0 35px 0;
   font-family: playfair;
+  font-weight: lighter;
   font-size: 40px;
+  text-transform: uppercase;
 }
 
 .form--label {
@@ -384,14 +428,6 @@
   z-index: 10;
 }
 
-.form--input__error {
-  font-family: MontserratLight;
-  font-size: 10px;
-  padding-top: 5px;
-  color: RGB(139, 146, 151);
-  display: none;
-}
-
 .form--text__playfair {
   padding-bottom: 35px;
   color: RGB(139, 146, 151);
@@ -406,50 +442,6 @@
   font-family: 15px;
   display: block;
 }
-
-.book--logo__rotate {
-  position: relative;
-  top: 400px;
-  right: 20px;
-  -webkit-transform: rotate(-90deg);
-  -moz-transform: rotate(-90deg);
-  -o-transform: rotate(-90deg);
-  -ms-transform: rotate(-90deg);
-  transform: rotate(-90deg);
-  cursor: pointer;
-  z-index: 3;
-}
-
-.booknow--logo {
-  position: absolute;
-  bottom: -533px;
-  left: 155px;
-  font-family: MontserratBold;
-  font-size: 17px;
-  color: white;
-  width: 149px;
-  height: 41px;
-  background: black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 3;
-  transition: transform 0.3s ease-in-out;
-  transform: translateY(797%);
-  text-transform: uppercase;
-}
-
-.book--close {
-  position: absolute;
-  padding: 15px 0px 0px 20px;
-  top: 0;
-  left: 0;
-}
-
-.close {
-  cursor: pointer;
-}
-
 .spread {
   transform: translate(0);
 }

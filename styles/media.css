@@ -9,6 +9,29 @@
   }
 }
 
+@media only screen and (max-width: 1400px) {
+  .book--container {
+    height: 100%;
+    padding-bottom: 4%;
+  }
+
+  .book--title {
+    margin: 5% 0 10% 0;
+  }
+  .form--group {
+    padding-bottom: 15%;
+    margin-bottom: 0;
+  }
+
+  .form--text__playfair {
+    padding-bottom: 10%;
+  }
+
+  .form--text__montserrat {
+    padding-top: 10%;
+  }
+}
+
 @media only screen and (max-width: 1250px) {
   .article--tex__title {
     font-size: 35px;
@@ -132,6 +155,11 @@
   .header {
     height: 700px;
   }
+
+  .brand--container {
+    margin-top: 15px;
+  }
+
   .brand--container__square {
     width: 90%;
     height: 70px;
@@ -187,7 +215,8 @@
 
   .squareBlack--text__paragraph {
     font-size: 13px;
-    padding: 0;
+    padding: 0 7% 0 7%;
+    text-align: justify;
   }
 
   /* ----------------Main------------------------ */
@@ -202,6 +231,34 @@
   }
 
   .article--tex__paragraph {
+    margin: 10% 5% 10% 0;
     text-align: justify;
+  }
+
+  /* ----------------Book Now------------------------ */
+
+  .book--container {
+    width: 329px;
+    height: 100%;
+    top: 0;
+  }
+
+  .book--close {
+    padding: 30px 0px 0px 30px;
+  }
+  .book--title {
+    margin: 5% 0 10% 0;
+  }
+  .form--group {
+    padding-bottom: 10%;
+    margin-bottom: 0;
+  }
+
+  .form--text__playfair {
+    padding-bottom: 10%;
+  }
+
+  .form--text__montserrat {
+    padding-top: 10%;
   }
 }

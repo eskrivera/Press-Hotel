@@ -1,16 +1,21 @@
-const booknow = document.querySelector(".booknow--logo");
-const booknowCont = document.querySelector(".book--container");
+let booknow = document.querySelector(".booknow--logo");
+let booknowCont = document.querySelector(".book--container");
+let closer = document.querySelector(".close");
 
-menu.addEventListener("click", () => {
-  booknowCont.classList.toggle("spread");
+booknow.addEventListener("click", () => {
+  booknowCont.classList.toggle("spread"), booknow.classList.toggle("spread");
 });
 
-window.addEventListener("click", (e) => {
-  if (
-    booknowCont.classList.contains("spread") &&
-    e.target != booknowCont &&
-    e.target != booknow
-  ) {
-    booknowCont.classList.toggle("spread");
-  }
+closer.addEventListener("click", () => {
+  booknowCont.classList.toggle("spread"), booknow.classList.toggle("spread");
+});
+
+// ------------------DatePicker----------------------------
+
+var pickerArr = new Pikaday({
+  field: document.getElementById("datepickerarr"),
+});
+
+var pickerDep = new Pikaday({
+  field: document.getElementById("datepickerdep"),
 });

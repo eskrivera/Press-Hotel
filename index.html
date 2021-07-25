@@ -7,7 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/styles.css">
     <link rel="stylesheet" href="./styles/media.css">
-    <script defer src="./scripts/main.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
+    <script defer src="./scripts/slider.js"></script>
+    <script defer src="./scripts/booknow.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
     <title>LandingPage</title>
 </head>
 
@@ -60,58 +63,58 @@
                     </p>
         </div>
 
-        <section class="booknow--section">
+        <div class="book--logo__rotate">
+            <div class="booknow--logo">Book now</div>
+        </div>
 
-            <div class="book--logo__rotate">
-                <p class="booknow--logo">Book now</p>
+
+        <div class="book--container">
+
+            <div class="book--close">
+                <img src="./assets/svgs/arrow.svg" alt="" class="close">
             </div>
 
-            <div class="book--container">
+            <h3 class="book--title"> Book Now </h3>
 
-                <div class="book--close">
-                    <img src="./assets/svgs/arrow.svg" alt="" class="close">
+            <form class="form--container">
+
+                <div class="form--group">
+
+                    <label class="form--label" for="arrivalDate">Arrival Date</label>
+                    <input required class="form  form--input" id="datepickerarr" type="text" name="arrivalDate"
+                        placeholder="Thurs, November">
+                    <img class="form--img" src="assets/svgs/calendar.svg"></img>
+
                 </div>
 
-                <h3 class="book--title"> Book Now </h3>
+                <div class="form--group">
+                    <label class="form--label" for="departureDate">Departure Date</label>
+                    <input required class="form form--input" id="datepickerdep" type="text" name="departureDate"
+                        placeholder="Sat, December 1">
+                    <img class="form--img" src="assets/svgs/calendar.svg"></img>
 
-                <form class="form--container">
-
-                    <div class="form--group">
-                        <label class="form--label" for="arrivalDate">Arrival Date</label>
-                        <input class="form  form--input" type="text" name="arrivalDate" placeholder="Thurs, November">
-                        <img class="form--img" src="assets/svgs/calendar.svg"></img>
-                        <p class="form--input__error">Campo obligatorio * </p>
-                    </div>
-
-                    <div class="form--group">
-                        <label class="form--label" for="departureDate">Departure Date</label>
-                        <input class="form form--input" type="text" name="departureDate" placeholder="Sat, December 1">
-                        <img class="form--img" src="assets/svgs/calendar.svg"></img>
-                        <p class="form--input__error">Campo obligatorio * </p>
-                    </div>
+                </div>
 
 
-                    <div class="form--group">
-                        <label class="form--label">Guests</label>
+                <div class="form--group">
+                    <label class="form--label">Guests</label>
+                    <input required class="form  form--input__two" type="text" name="adult" placeholder="1 Adult">
+                    <img class="form--img_1 arrow--bottom" src="assets/svgs/dropdown_arrow.svg"></img>
 
-                        <input class="form  form--input__two" type="text" name="adult" placeholder="1 Adult">
-                        <img class="form--img_1" src="assets/svgs/dropdown_arrow.svg"></img>
-                        <p class="form--input__error">Campo obligatorio * </p>
+                    <input required class="form  form--input__two" type="text" name="child" placeholder="1 Child">
+                    <img class="form--img arrow--bottom" src="assets/svgs/dropdown_arrow.svg"></img>
 
-                        <input class="form  form--input__two" type="text" name="child" placeholder="1 Child">
-                        <img class="form--img" src="assets/svgs/dropdown_arrow.svg"></img>
-                        <p class="form--input__error">Campo obligatorio * </p>
-                    </div>
+                </div>
 
-                    <p class="form--text__playfair">GEY READY! You are about to get our best price. Guaranted</p>
+                <p class="form--text__playfair">GEY READY! You are about to get our best price. Guaranted</p>
 
-                    <button class="article--button">LET'S GO</button>
+                <button class="article--button">LET'S GO</button>
 
-                    <a href="#" class="form--text__montserrat">OR, BOOK YOUR GROUP <img
-                            src="./assets/svgs/long_arrow.svg"></a>
-                </form>
+                <a href="#" class="form--text__montserrat">OR, BOOK YOUR GROUP <img
+                        src="./assets/svgs/long_arrow.svg"></a>
+            </form>
 
-            </div>
+        </div>
 
     </header>
 
